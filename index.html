@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Produto</title>
+    <link rel="stylesheet" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- DROPDOWN -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li class="dropdown">
+                <a href="#servicos" class="dropbtn">Promoções</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#10%off">10% off</a></li>
+                        <li><a href="#20%off">20% off</a></li>
+                        <li><a href="#40%off">40% off</a></li>
+                    </ul>
+            </li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- SELEÇÃO DO PRODUTO -->
+    <main>
+        <section class="produto"> <!-- Seleção do Produto -->
+            <div class="imagens-produtos"> <!-- Div que contém as imagens do produto -->
+                <img src="./produto1.png" alt="Produto Principal" class="imagem-principal" id="imagem-principal">
+                <div class="miniaturas"> <!-- Miniatura das Imagens -->
+                    <img src="./produto1.png" alt="Miniatura 1" class="miniatura" data-imagem="produto1.png"> 
+                    <img src="./produto2.png" alt="Miniatura 2" class="miniatura" data-imagem="produto2.png"> 
+                    <img src="./produto3.png" alt="Miniatura 3" class="miniatura" data-imagem="produto3.png"> 
+                </div>
+            </div>
+
+            <div class="detalhes_produto"> <!-- Div que contém os detalhes do produto -->
+                <h2>Calça Jeans Feminina BootCut - Pool Jeans</h2> <!-- Nome do produto -->
+                <p class="descricao">Cintura Alta <br> Comprimento Longo <br> Stretch </p> <!-- Descrição do produto -->
+                <p class="preco">R$: 149,90</p> <!-- Preço do Produto -->
+                
+                <form class="opcoes-compra"> <!-- Formulário para selecionar tamanho e cor do produto -->
+                    <label for="tamanho">Tamanho:</label> <!-- Seleção do Tamanho -->
+                    <select id="tamanho">
+                        <option>36</option>
+                        <option>38</option>
+                        <option>40</option>
+                        <option>42</option>
+                    </select>
+                    
+                    <label for="cor">Cor:</label> <!-- Seleção da Cor -->
+                    <select id="cor">
+                        <option>Azul-Claro</option>
+                        <option>Azul-Escuro</option>
+                        <option>Cinza</option>
+                    </select>
+
+                    <button type="submit">Comprar</button> <!-- Botão de Comprar -->
+
+                </form>
+            </div>
+        </section>
+
+
+        <!-- --------------------------------------------------------------------------------------------------------------- -->
+
+        
+        <!-- COMENTARIO DOS CLIENTES -->
+        <section class="comentarios"> <!-- Seleção de comentários dos clientes -->
+            <h3>Comentário dos nosso Clientes</h3> <!-- Título da Seção de Comentários -->
+
+            <div class="comentario"> <!-- Comentário 1 -->
+                <img src="nicole.png" alt="Foto de Nicole" class="foto-usuario"> <!-- Foto do Usuário -->
+                <p><strong>Nicole:</strong>Ótimo produto, recomendo</p>
+            </div>
+
+            <div class="comentario"> <!-- Comentário 2 -->
+                <img src="anaClara.png" alt="Foto de Ana Clara" class="foto-usuario"> <!-- Foto do Usuário -->
+                <p><strong>Maria Clara:</strong>Muito bom, superou minhas expectativas</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Nosso objetivo é um só: queremos transformar vidas através da moda. <br>
+                Para isso, pautamos nossas ações em três pilares fundamentais: transparência, ética e diversidade. <br>
+                E te convidamos a conhecer um pouco mais da nossa história e jeito de atuar.
+            </div>
+
+            <div class="footer-section">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#Feminino">Feminino</a></li>
+                    <li><a href="#Masculino">Masculino</a></li>
+                    <li><a href="#Infantil">Infantil</a></li>
+                    <li><a href="#Perfumaria">Perfumaria</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: canal@riachuelo.com.br</p>
+                <p>Telefone: (19)92472-2638</p>
+                <p>Endereço: Rua Campbell,253 - São Paulo-SP</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="">Facebook</a>
+                    <a href="">Instagram</a>
+                    <a href="">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy;2024 Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
